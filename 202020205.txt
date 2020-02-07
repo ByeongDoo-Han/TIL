@@ -1,0 +1,54 @@
+" INSERT INTO member(num, NAME , addr) VALUES(1, '성영한','한국');
+
+INSERT INTO member(num, NAME) VALUES(2,'손정의');
+
+INSERT INTO member VALUES(3,'스티브잡스','미국');
+
+UPDATE member 
+SET addr = '일본1', NAME='손정의1' 
+WHERE num = 2;
+
+DELETE FROM member
+WHERE num = 2;
+
+SELECT num, NAME,addr
+FROM member;
+
+
+SELECT empno, ename, job 
+FROM emp;
+
+
+SELECT empno, sal, deptno
+FROM emp
+ORDER BY sal DESC;
+
+SELECT empno, sal, hiredate
+FROM emp
+ORDER by sal ASC;
+
+
+SELECT job, sal
+FROM emp
+ORDER BY job ASC, sal DESC;
+
+SELECT empno AS ""사원 번호"" , ename AS ""사원이름"" 
+FROM emp;
+
+
+SELECT empno 사원번호  , ename 사원이름 
+FROM emp;
+
+
+SELECT sal, sal*1.1
+FROM emp
+WHERE deptno = 10;
+
+
+SELECT *
+FROM emp
+WHERE sal >= 3000;
+
+SELECT ename, deptno
+FROM emp
+WHERE deptno != 30;"
